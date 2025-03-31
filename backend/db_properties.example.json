@@ -1,0 +1,101 @@
+{
+  "properties": [
+    {
+      "id": "1001",
+      "propertyId": "1001",
+      "mainImage": "/images/1001/gallery/main-1001.JPG",
+      "images": [
+        {
+          "id": "main",
+          "path": "/images/1001/gallery/main-1001.JPG",
+          "category": "Exterior",
+          "order": 1
+        },
+        {
+          "id": "living-1",
+          "path": "/images/1001/gallery/Living_Room-01.JPG",
+          "category": "Living Room",
+          "order": 2
+        },
+        {
+          "id": "bathroom-1",
+          "path": "/images/1001/gallery/Bathroom-01.JPG",
+          "category": "Bathrooms",
+          "order": 3
+        }
+      ],
+      "gateCode": "EXAMPLE_CODE",
+      "doorCode": "EXAMPLE_CODE",
+      "wifiPassword": "EXAMPLE_PASSWORD",
+      "addressNumber": "1001",
+      "addressStreet": "Example Street, Example City, State",
+      "status": "Active",
+      "reservationStatus": "none",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "1002",
+      "propertyId": "1002",
+      "mainImage": "/images/1002/gallery/main-1002.JPG",
+      "images": [],
+      "gateCode": "EXAMPLE_CODE",
+      "doorCode": "EXAMPLE_CODE",
+      "wifiPassword": "EXAMPLE_PASSWORD",
+      "addressNumber": "1002",
+      "addressStreet": "Another Street, Example City, State",
+      "status": "Active",
+      "reservationStatus": "none",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "1003",
+      "propertyId": "1003",
+      "addressNumber": "1003",
+      "mainImage": "https://example.com/image.jpg",
+      "addressStreet": "Third Street, Example City, State",
+      "images": [
+        {
+          "id": "1003-0",
+          "path": "https://example.com/image.jpg",
+          "category": "Living Room",
+          "order": 1
+        }
+      ],
+      "gateCode": "EXAMPLE_CODE",
+      "doorCode": "EXAMPLE_CODE",
+      "wifiPassword": "EXAMPLE_PASSWORD",
+      "status": "Active",
+      "reservationStatus": "none",
+      "createdAt": "2023-01-01T00:00:00.000Z",
+      "updatedAt": "2023-01-02T00:00:00.000Z"
+    }
+  ],
+  "inventory": {
+    "catalog": [
+      {
+        "id": "cat-001",
+        "name": "Bedroom Items",
+        "items": [
+          {
+            "id": "item-001",
+            "name": "Queen Bed",
+            "description": "Queen size bed with frame",
+            "category": "Furniture",
+            "quantity": 1,
+            "unit": "piece"
+          },
+          {
+            "id": "item-002",
+            "name": "Bedside Lamp",
+            "description": "Table lamp for bedside",
+            "category": "Lighting",
+            "quantity": 2,
+            "unit": "piece"
+          }
+        ]
+      }
+    ]
+  }
+}

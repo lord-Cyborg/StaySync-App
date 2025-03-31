@@ -1,0 +1,129 @@
+{
+  "catalog": {
+    "items": [
+      {
+        "id": "bed-001",
+        "name": "Queen Size Bed",
+        "category": "Furniture",
+        "type": "bedroom",
+        "groups": [
+          "Beds",
+          "Essential"
+        ],
+        "description": "Standard queen size bed with frame and headboard",
+        "specifications": [
+          {
+            "id": "spec-001",
+            "name": "Dimensions",
+            "value": "60x80",
+            "unit": "inches",
+            "type": "dimension"
+          },
+          {
+            "id": "spec-002",
+            "name": "Material",
+            "value": "Wood",
+            "unit": "",
+            "type": "material"
+          }
+        ],
+        "defaultValue": 899.99,
+        "manufacturer": "Example Manufacturer"
+      },
+      {
+        "id": "towel-001",
+        "name": "Bath Towel",
+        "category": "Linens",
+        "type": "bathroom",
+        "groups": [
+          "Towels",
+          "Essential"
+        ],
+        "description": "Standard bath towel",
+        "specifications": [
+          {
+            "id": "spec-003",
+            "name": "Dimensions",
+            "value": "30x54",
+            "unit": "inches",
+            "type": "dimension"
+          },
+          {
+            "id": "spec-004",
+            "name": "Material",
+            "value": "Cotton",
+            "unit": "",
+            "type": "material"
+          }
+        ],
+        "defaultValue": 19.99,
+        "manufacturer": "Example Manufacturer"
+      }
+    ]
+  },
+  "templates": {
+    "global": [
+      {
+        "id": "template-bed-001",
+        "name": "Bedroom Setup",
+        "items": ["bed-001"]
+      }
+    ]
+  },
+  "propertyInventories": {
+    "1001": {
+      "items": [
+        {
+          "id": "prop-bed-001",
+          "catalogItemId": "bed-001",
+          "propertyId": "1001",
+          "roomId": "bedroom-1",
+          "quantity": 1,
+          "condition": "good",
+          "notes": "Installed on 2023-01-01",
+          "lastChecked": "2023-06-01T00:00:00.000Z"
+        },
+        {
+          "id": "prop-towel-001",
+          "catalogItemId": "towel-001",
+          "propertyId": "1001",
+          "roomId": "bathroom-1",
+          "quantity": 4,
+          "condition": "good",
+          "notes": "Restocked on 2023-01-01",
+          "lastChecked": "2023-06-01T00:00:00.000Z"
+        }
+      ],
+      "templates": [
+        {
+          "id": "prop-template-001",
+          "type": "property",
+          "name": "Standard Property Setup",
+          "items": ["bed-001", "towel-001"]
+        }
+      ]
+    }
+  },
+  "groups": {
+    "Furniture": {
+      "categories": [
+        "bedroom",
+        "living"
+      ]
+    },
+    "Linens": {
+      "categories": [
+        "bedroom",
+        "bathroom"
+      ]
+    },
+    "Essential": {
+      "categories": [
+        "bedroom",
+        "bathroom",
+        "kitchen",
+        "living"
+      ]
+    }
+  }
+}

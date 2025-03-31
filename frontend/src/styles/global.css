@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(to bottom, #00FFCC, #F2F2ED); /* Degradê horizontal */
+    .header, .sidebar 
+    {
+        background: linear-gradient(175deg, #17A2B8, #138496, #2A407E, #050651); /* Degradê proposto */
+    }
+
+/* Outras regras de estilo podem ser adicionadas aqui */

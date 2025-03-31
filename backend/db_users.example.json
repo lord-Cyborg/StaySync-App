@@ -1,0 +1,45 @@
+{
+  "users": {
+    "example@example.com": {
+      "id": "00000000-0000-0000-0000-000000000000",
+      "email": "example@example.com",
+      "password": "$2b$10$EXAMPLE_HASHED_PASSWORD",
+      "role": "property_owner",
+      "name": "Example User",
+      "created": "2023-01-01T00:00:00.000Z",
+      "status": "active",
+      "verified": true
+    }
+  },
+  "roles": {
+    "admin": {
+      "name": "Administrador do Sistema",
+      "permissions": [
+        "*"
+      ]
+    },
+    "financial_manager": {
+      "name": "Gerente Financeiro",
+      "permissions": [
+        "view_dashboard",
+        "manage_revenue",
+        "manage_expenses",
+        "approve_expenses",
+        "view_reports",
+        "export_data"
+      ]
+    },
+    "property_owner": {
+      "name": "Proprietário",
+      "permissions": [
+        "view_dashboard",
+        "view_properties",
+        "manage_properties",
+        "view_bookings",
+        "manage_bookings",
+        "view_inventory",
+        "view_reports"
+      ]
+    }
+  }
+}
